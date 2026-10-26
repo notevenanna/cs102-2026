@@ -29,17 +29,9 @@ def gcd(a: int, b: int) -> int:
     >>> gcd(3, 7)
     1
     """
-    
     while b != 0:
-        if a % b != 0:
-            a,  b = b, a % b
+        a,  b = b, a % b
     return a
-
-while True:
-    a, b = map(int, input().split())
-    print(gcd(a, b))
-        
-
 
 def multiplicative_inverse(e: int, phi: int) -> int:
     """
